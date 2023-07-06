@@ -20,10 +20,33 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Publish
-      uses: sakebook/actions-flutter-pub-publisher@v1.3.0
+
+    - name: 🛤 Setup Java
+      uses: actions/setup-java@v3
       with:
-        credential: ${{ secrets.CREDENTIAL_JSON }}
-        flutter_package: true
-        skip_test: true
-        dry_run: true
+        distribution: 'zulu'
+        java-version: '11'
+
+    - name: 🚀 Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.10.5'
+        channel: 'stable'
+
+    - name: 🐳 Install dependencies
+      run: |
+        cd example
+        flutter pub get
+
+    - name: 🕸 Build Web
+      run: |
+        cd example
+        flutter build web --base-href /Flutter-Neumorphic/
+
+    - name: Deploy 🚀 to gh-page-static
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages # The branch the action should deploy to.
+        folder: "example/build/web" # The folder the action should deploy.
+        clean: true # Automatically remove deleted files from the deploy branch
+        token: ${{ secrets.ACCESS_TOKEN }}
