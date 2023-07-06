@@ -4,18 +4,17 @@ A complete, ready to use, Neumorphic ui kit for Flutter
 
 [![flutter_logo](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/flutter_logo_small.gif)](https://github.com/Idean/Flutter-Neumorphic)
 
-Try Flutter-Neumorphic on your browser : 👉 https://flutter-neumorphic.firebaseapp.com/ 🌐
+Try Flutter-Neumorphic on your browser : 👉 <https://gsmlg-dev.github.io/Flutter-Neumorphic/> 🌐
 
 [![neumorphic_playground](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/playground.gif)](https://github.com/Idean/Flutter-Neumorphic)
 
 # ⚙️ Installation
 
-https://pub.dev/packages/flutter_neumorphic
+<https://pub.dev/packages/flutter_neumorphic>
 
 [![pub package](https://img.shields.io/pub/v/flutter_neumorphic.svg)](
 https://pub.dartlang.org/packages/flutter_neumorphic)
 [![pub package](https://api.codemagic.io/apps/5e6113f78b547c3c80edbdb3/5e6113f78b547c3c80edbdb2/status_badge.svg)](https://github.com/Idean/Flutter-Neumorphic)
-
 
 ```dart
 dependencies:
@@ -24,7 +23,8 @@ dependencies:
 //requires flutter > 1.13.18
 ```
 
-The in your .dart files 
+The in your .dart files
+
 ```dart
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 ```
@@ -150,7 +150,6 @@ Neumorphic(
 
 ☝️ Playing with LightSource & Depth
 
-
 ### 🛠️ Attributes
 
 | Attributes | Values | Description |
@@ -160,17 +159,16 @@ Neumorphic(
 | [Depth](#depth) | -20 <= double <= 20 | The distance of the widget to his parent. Can be negative => emboss. It influences on the shadow's color and its size/blur |
 | [Intensity](#intensity) | 0 <= double <= 1 | The intensity of the Light, it influences on the shadow's color |
 | [SurfaceIntensity](surfaceintensity) | 0 <= double <= 1 | The intensity of the Surface, it influences on the concave/convex darkness |
-| Color | any Color | The default color of  Neumorphic elements | 
-| Accent | any Color | The default accent color of the Neumorphic element when activated (eg: checkbox) | 
-| Variant | any Color | The default secondary color of the Neumorphic element (eg: used as second color on the progress gradient) | 
-| [BoxShape](#-custom-shape) | Circle, RoundRect(radius), Stadium, Path | The box shape of a Neumorphic element. Stadium : roundrect with cirlces on each side | 
-| [Border](#-accessibility--border) | NeumorphicBorder | A border (color/width) to enhance contrast with background and others elements | 
+| Color | any Color | The default color of  Neumorphic elements |
+| Accent | any Color | The default accent color of the Neumorphic element when activated (eg: checkbox) |
+| Variant | any Color | The default secondary color of the Neumorphic element (eg: used as second color on the progress gradient) |
+| [BoxShape](#-custom-shape) | Circle, RoundRect(radius), Stadium, Path | The box shape of a Neumorphic element. Stadium : roundrect with cirlces on each side |
+| [Border](#-accessibility--border) | NeumorphicBorder | A border (color/width) to enhance contrast with background and others elements |
 
 [![Neumorphic](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/doc/depth.gif)](https://github.com/Idean/Flutter-Neumorphic)
 [![Neumorphic](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/doc/intensity.gif)](https://github.com/Idean/Flutter-Neumorphic)
 [![Neumorphic](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/doc/surface_intensity.gif)](https://github.com/Idean/Flutter-Neumorphic)
 [![Neumorphic](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/doc/lightsource.gif)](https://github.com/Idean/Flutter-Neumorphic)
-
 
 ### 🔧 Shapes
 
@@ -192,7 +190,6 @@ Neumorphic(
   <td>depth >= 0 && shape == Flat</td>
 </tr>
 
-
 <tr>
   <td>Convex</td>
   <td><img src="https://github.com/Idean/Flutter-Neumorphic/raw/master/medias/shapes/widget_convex.png"/></td>
@@ -200,15 +197,12 @@ Neumorphic(
   <td>depth >= 0 && shape == Convex</td>
 </tr>
 
-
-
 <tr>
   <td>Concave</td>
   <td><img src="https://github.com/Idean/Flutter-Neumorphic/raw/master/medias/shapes/widget_concave.png"/></td>
   <td><img src="https://github.com/Idean/Flutter-Neumorphic/raw/master/medias/shapes/concave.png"/> </td>
   <td>depth >= 0 && shape == Concave</td>
 </tr>
-
 
 <tr>
   <td>Emboss</td>
@@ -240,7 +234,6 @@ child: NeumorphicText(
     ),
 ```
 
-
 ## Neumorphic Icon
 
 [![custom_shape](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/neumorphic_icon.png)](https://github.com/Idean/Flutter-Neumorphic)
@@ -254,7 +247,7 @@ child: NeumorphicIcon(
 
 How to display **SVG** icons ?
 
-Simply use [https://fluttericon.com/](https://fluttericon.com/) to export your svg as .ttf & use NeumorphicIcon(YOUR_ICON) 
+Simply use [https://fluttericon.com/](https://fluttericon.com/) to export your svg as .ttf & use NeumorphicIcon(YOUR_ICON)
 
 [![custom_shape](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/flutter_svg.png)](https://fluttericon.com/)
 
@@ -262,7 +255,7 @@ Simply use [https://fluttericon.com/](https://fluttericon.com/) to export your s
 
 [![custom_shape](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/custom_shape.gif)](https://github.com/Idean/Flutter-Neumorphic)
 
-Flutter Neumorphic supports custom shapes, just provide a path to 
+Flutter Neumorphic supports custom shapes, just provide a path to
 
 ```dart
 class MyShapePathProvider extends NeumorphicPathProvider {
@@ -296,7 +289,7 @@ Neumorphic(
 ),
 ```
 
-You can import the Flutter logo as a custom shape using 
+You can import the Flutter logo as a custom shape using
 
 ```dart
 Neumorphic(
@@ -309,8 +302,8 @@ Neumorphic(
 
 ## 🔲 Accessibility / Border
 
-For design purposes, or simply to enhance accessibility, 
-you can add a border on Neumorphic widgets 
+For design purposes, or simply to enhance accessibility,
+you can add a border on Neumorphic widgets
 
 [![Neumorphic](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/border.gif)](https://github.com/Idean/Flutter-Neumorphic)
 
@@ -339,7 +332,6 @@ border: NeumorphicBorder(
 Note that `borderColor` and `borderWidth` default values has been added to `NeumorphicThemeData`
 
 ## 🎨 Neumorphic Theme
-
 
 [![neumorphic_theme](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/toggleDark.gif)](https://github.com/Idean/Flutter-Neumorphic)
 [![neumorphic_theme](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/toggleTheme.gif)](https://github.com/Idean/Flutter-Neumorphic)
@@ -375,11 +367,13 @@ final accentColor = theme.accentColor;
 ```
 
 Toggle from light to dark
+
 ```dart
 NeumorphicTheme.of(context).themeMode = ThemeMode.dark;
 ```
 
 Know if using dark
+
 ```dart
 if(NeumorphicTheme.of(context).isUsingDark){
   
@@ -435,9 +429,7 @@ Neumorphic card however pretends to extrude from the background. It’s a raised
 
 Here's a Nereumorphic Button tap (slowed x2) from the sample app, you can see how the element seems to change its depth to its surface.
 
-
 # 👥 Contributors
-
 
 |                                                                                | Contributors |
 |:------------------------------------------------------------------------------:|--------------|
@@ -448,13 +440,11 @@ Here's a Nereumorphic Button tap (slowed x2) from the sample app, you can see ho
 | [![Overman775](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/contributors/overman775.jpeg)](https://github.com/Overman775)    | [Overman775](https://github.com/Overman775)  |
 | [![schopy](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/contributors/schopy.jpeg)](https://github.com/schopy)    | [schopy](https://github.com/schopy)  |
 
-
 ## 📄 License
-
 
 Flutter-Neumorphic is released under the Apache2 license.
 See [LICENSE](./LICENSE) for details.
 
-If you use the open-source library in your project, please make sure to credit and backlink to www.idean.com
+If you use the open-source library in your project, please make sure to credit and backlink to <www.idean.com>
 
 [![bottom_banner](https://github.com/Idean/Flutter-Neumorphic/blob/master/medias/bottom_banner.png)](https://www.idean.com)
