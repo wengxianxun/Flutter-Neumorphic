@@ -1,3 +1,10 @@
+## 3.3.0
+
+* Update flutter and dart version to 3.0.0
+* Fix accentColor in theme
+* Fix example
+* Rename to flutter_neumorphic_plus
+
 ## 3.2.0
 
 * Remove generated localization class ([#215](https://github.com/Idean/Flutter-Neumorphic/pull/215))

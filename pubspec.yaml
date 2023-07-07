@@ -1,17 +1,12 @@
-name: flutter_neumorphic
+name: flutter_neumorphic_plus
 description: A complete, ready to use, Neumorphic ui kit for Flutter. Dark theming compatible & fully customizable.
-version: 3.2.0
-#authors: [
-#  Florent Champigny <champigny.florent@gmail.com>,
-#  Olivier Bonvila <olivier.bonvila@idean.com>,
-#  Gyl Jean Lambert <almighty972@gmail.com>
-#]
-homepage: https://github.com/Idean/Flutter-Neumorphic
-issue_tracker: https://github.com/Idean/Flutter-Neumorphic/issues
+version: 3.3.0
+homepage: https://github.com/gsmlg-dev/Flutter-Neumorphic
+issue_tracker: https://github.com/gsmlg-dev/Flutter-Neumorphic/issues
 
 environment:
-  sdk: ">=3.0.0"
-  flutter: ">=3.0.0"
+  sdk: ^3.0.0
+  flutter: ^3.0.0
 
 dependencies:
   flutter:
